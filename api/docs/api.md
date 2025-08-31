@@ -1,4 +1,5 @@
 ## GET /posts
+
 すべての日記を取得する
 
 ## POST /posts
