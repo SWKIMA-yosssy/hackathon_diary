@@ -1,0 +1,15 @@
+[project]
+name = "hackathon_diary_server"
+version = "0.1.0"
+description = "A server for the hackathon diary application"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.uv]
+dev-dependencies = ["pyright>=1.1.399", "ruff>=0.11.5"]
+
+[tool.pyright]
+typeCheckingMode = "standard"
+venvPath = "."
+venv = ".venv"
