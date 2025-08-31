@@ -20,6 +20,9 @@
 - id
   - PK, SK, not null
     - 投稿を一意に識別する ID
+- user_id
+  - FK, not null
+    - usersテーブルのID
 - content
   - not null
   - 日記の内容
