@@ -4,7 +4,14 @@ version = "0.1.0"
 description = "A server for the hackathon diary application"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "fastapi>=0.116.1",
+    "google-auth>=2.40.3",
+    "pyjwt>=2.10.1",
+    "python-dotenv>=1.1.1",
+    "requests>=2.32.5",
+    "uvicorn>=0.35.0",
+]
 
 [tool.uv]
 dev-dependencies = ["pyright>=1.1.399", "ruff>=0.11.5"]
