@@ -8,6 +8,8 @@
     - schemas/
     - cruds/
     - models/
+  - db/
+    - schema.sql
   - pyproject.toml
   - README.md
   - uv.lock
@@ -21,3 +23,6 @@
 - cruds/: DBのCRUD操作を定義
 - models/: ORMライブラリにおけるDBモデル
 
+## /db以下
+
+- schema.sqlでデータベースを起動した時用のスキーマを定義
