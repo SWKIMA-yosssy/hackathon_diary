@@ -1,5 +1,6 @@
 import SignIn from "@/components/SignInButton";
 import SignOut from "@/components/SignoutButton";
+import TestButtons from "@/components/TestButtons";
 import { auth } from "@/lib/auth";
 
 export default async function Home() {
@@ -10,12 +11,18 @@ export default async function Home() {
       <h1>Hello world!</h1>
       {session ? (
         <div>
-          <div>{session.user?.name}</div>
-          <SignOut />
+          <p>Logged in as {session.user?.name}</p>
+          <p>{session.user?.email}</p>
         </div>
       ) : (
-        <SignIn />
+        <div>
+          <p>Not logged in (anonymous access)</p>
+        </div>
       )}
+      <div>
+        <TestButtons user={session?.user} />
+        <div>{session ? <SignOut /> : <SignIn />}</div>
+      </div>
     </div>
   );
 }
