@@ -6,7 +6,7 @@
   - routers/
   - cruds/
     - post.py
-    user.py
+    - user.py
   - model.py
 - db/
   - schema.sql
